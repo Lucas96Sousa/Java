@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Enumerate_Composition/Composition/Composition.iml" filepath="$PROJECT_DIR$/Enumerate_Composition/Composition/Composition.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Enumerate_Compound/Compound/Compound.iml" filepath="$PROJECT_DIR$/Enumerate_Compound/Compound/Compound.iml" />
       <module fileurl="file://$PROJECT_DIR$/DateHour/DateHour.iml" filepath="$PROJECT_DIR$/DateHour/DateHour.iml" />
       <module fileurl="file://$PROJECT_DIR$/Enumerate-Composion/Enumerate-Composion.iml" filepath="$PROJECT_DIR$/Enumerate-Composion/Enumerate-Composion.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Java.iml" filepath="$PROJECT_DIR$/.idea/Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Enumerate_Compound/StringBuilder/StringBuilder.iml" filepath="$PROJECT_DIR$/Enumerate_Compound/StringBuilder/StringBuilder.iml" />
     </modules>
   </component>
 </project>
