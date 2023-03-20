@@ -22,12 +22,19 @@ public class Main {
             String[] vect = sc.nextLine().split(" ");
             int position = sc.nextInt();
             System.out.println(vect[position]);
+          
+
         }catch(ArrayIndexOutOfBoundsException e ) {
             System.out.println("Invalid position");
+            e.printStackTrace();
+            System.out.println();
+            
         }catch(InputMismatchException e) {
             System.out.println("Input error");
+        
         }
         sc.close();
         System.out.println("***METHOD2 END***");
-    }
+        
+     }  
 }
