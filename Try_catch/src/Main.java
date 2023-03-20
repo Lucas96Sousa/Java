@@ -1,12 +1,15 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
+import java.io.File;
+import java.io.FileNotFoundException;
 
 public class Main {
     public static void main(String[] args) {
-        method1();
+    /*     
+      method1();
 
         System.out.println("End of program");
-    }
+      }
 
     public static void method1() {
         System.out.println("***METHOD1 START***");
@@ -24,17 +27,37 @@ public class Main {
             System.out.println(vect[position]);
           
 
-        }catch(ArrayIndexOutOfBoundsException e ) {
+        }
+        catch(ArrayIndexOutOfBoundsException e ) {
             System.out.println("Invalid position");
             e.printStackTrace();
             System.out.println();
             
-        }catch(InputMismatchException e) {
-            System.out.println("Input error");
-        
         }
+        catch(InputMismatchException e) {
+            System.out.println("Input error"); 
+        }
+        
         sc.close();
         System.out.println("***METHOD2 END***");
         
-     }  
+     } */
+      
+    File file = new File("/tmp/test.txt");
+    Scanner sc = null;
+    try {
+      sc = new Scanner(file);
+      while(sc.hasNextLine()) {
+        System.out.println(sc.nextLine());
+      }
+    } catch (FileNotFoundException e) {
+      System.out.print("Error opening file: " + e.getMessage());
+    }
+    finally {
+      if(sc != null) {
+        sc.close();
+      }
+      System.out.println("Finally block executed !!!");
+    }
+ }
 }
