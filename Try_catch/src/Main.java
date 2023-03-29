@@ -15,8 +15,9 @@ public class Main {
         System.out.println("***METHOD1 START***");
         method2();
         System.out.println("***METHOD1 END***");
-    }
 
+    }
+  
     public static void method2() {
         System.out.println("***METHOD2 START***");
         Scanner sc = new Scanner(System.in);
@@ -34,7 +35,8 @@ public class Main {
             System.out.println();
             
         }
-        catch(InputMismatchException e) {
+        catch(InputMismatchException e) ear
+          
             System.out.println("Input error"); 
         }
         
