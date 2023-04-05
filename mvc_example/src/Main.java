@@ -7,7 +7,7 @@ import models.entities.Reservation;
 import models.exceptions.DomainException;
 
 class Main {
-  public static void main(String[] args)  {
+  public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
 
     SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
@@ -25,23 +25,20 @@ class Main {
 
       System.out.println();
       System.out.println("Enter data to update the reservation: ");
-      System.out.print("Check-in date (dd/MM/yyyy): "); 
+      System.out.print("Check-in date (dd/MM/yyyy): ");
       checkIn = sdf.parse(sc.next());
       System.out.print("Check-out date (dd/MM/yyyy): ");
       checkOut = sdf.parse(sc.next());
 
       reservation.UpdateDates(checkIn, checkOut);
       System.out.print("Reservation: " + reservation);
-    }
-    catch(ParseException e ){
-        System.out.println("Invalid date format!!!!");
-    }
-    catch(DomainException e){
+    } catch (ParseException e) {
+      System.out.println("Invalid date format!!!!");
+    } catch (DomainException e) {
       System.out.println("Error in reservation: " + e.getMessage());
-    }
-    catch(RuntimeException e) {
+    } catch (RuntimeException e) {
       System.out.println("Unexpected Error");
     }
     sc.close();
-   }
+  }
 }
