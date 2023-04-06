@@ -1,3 +1,5 @@
+package File_Scanner;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
