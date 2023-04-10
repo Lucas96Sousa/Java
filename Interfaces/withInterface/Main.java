@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 import models.entities.CarRental;
 import models.entities.RentalService;
-import models.entities.RentalService;
 import models.entities.Vehicle;
 import models.services.BrazilTaxService;
 
