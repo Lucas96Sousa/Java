@@ -1,5 +1,6 @@
 package devices;
 
-public class Scanner {
-    
+public interface Scanner {
+
+  String scan();
 }
