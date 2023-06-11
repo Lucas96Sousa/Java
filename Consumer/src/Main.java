@@ -15,7 +15,7 @@ public class Main {
         list.add(new Product("Tablet", 350.50));
         list.add(new Product("HD Case", 80.90));
 
-        //Static method
+        //Static methodq
 
         // list.forEach(Product::staticPriceUpdate);
         // Non-Static Method
