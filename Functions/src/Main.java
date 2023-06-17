@@ -24,7 +24,7 @@ public class Main {
 
     /*
      * Static
-     */
+    */
     // List<String> names = list.stream().map(Product::staticUpperCaseName).collect(Collectors.toList());
 
     /*
