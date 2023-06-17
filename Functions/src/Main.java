@@ -20,7 +20,7 @@ public class Main {
     * implementação da interface
     */ 
     // List<String> names = list.stream().map(new UpperCaseName()).collect(Collectors.toList());
-
+  
 
     /*
      * Static
