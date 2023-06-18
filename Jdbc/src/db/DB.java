@@ -11,16 +11,28 @@ public class DB {
     
     private static Connection conn = null;
 
-    public static Connection getConnection() throws SQLException {
-        if(conn == null) {
-            Properties props = loadProperties();
-            String url = props.getProperty("db.url");
-            conn = DriverManager.getConnection(url,props);
-        }
+   
 
-        return conn;
-        
-    }
+  public static Connection getConnection() throws ClassNotFoundException, SQLException {
+
+         Class.forName("com.mysql.cj.jdbc.Driver");
+
+             if (conn == null) {
+
+                 Properties props = loadProperties();
+
+                 String url = props.getProperty("url");
+
+                 String user = props.getProperty("user");
+
+                 String pass = props.getProperty("pass");
+
+                 conn = DriverManager.getConnection(url, user, pass);
+
+             }
+            return conn;
+
+         }
 
     public static void closeConnection() {
         if(conn != null) {

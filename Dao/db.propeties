@@ -1,4 +1,0 @@
-user=root
-password=251526
-dburl=jdbc:mysql://172.17.0.2/jdbc
-useSSL=false

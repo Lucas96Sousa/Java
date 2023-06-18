@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Classes_abstratas/src"/>
+	<classpathentry kind="src" path="Comparator/src"/>
+	<classpathentry kind="src" path="Consumer/src"/>
+	<classpathentry kind="src" path="DateHour/DateHour/src"/>
+	<classpathentry kind="src" path="Enumerate_Compound/Compound/Compound/src"/>
+	<classpathentry kind="src" path="Enumerate_Compound/Compound/src"/>
+	<classpathentry kind="src" path="Enumerate_Compound/Enumerate/src"/>
+	<classpathentry kind="src" path="Enumerate_Compound/Exercicio/src"/>
+	<classpathentry kind="src" path="Enumerate_Compound/StringBuilder/src"/>
+	<classpathentry kind="src" path="Erros_personalizados/src"/>
+	<classpathentry kind="src" path="Exercicio_MVC"/>
+	<classpathentry kind="src" path="Exercicio_polimorfismo/src"/>
+	<classpathentry kind="src" path="Functions/src"/>
+	<classpathentry kind="src" path="Generics_Set_Map/Generic_delimitation/src"/>
+	<classpathentry kind="src" path="Generics_Set_Map/Generic_module/src"/>
+	<classpathentry kind="src" path="HashCodeAndEquals/src"/>
+	<classpathentry kind="src" path="Herança/Heranca/src"/>
+	<classpathentry kind="src" path="Interface_funcional/src"/>
+	<classpathentry kind="src" path="Interfaces/Default_Method/src"/>
+	<classpathentry kind="src" path="Interfaces/Dependency_Inversion"/>
+	<classpathentry excluding="models/" kind="src" path="Interfaces/Exercicio"/>
+	<classpathentry kind="src" path="Interfaces/Exercicio/models"/>
+	<classpathentry kind="src" path="Interfaces/Heranca_Multipla"/>
+	<classpathentry kind="src" path="Interfaces/Interface_Comparable/src"/>
+	<classpathentry kind="src" path="Interfaces/Interfaces_2"/>
+	<classpathentry kind="src" path="Interfaces/withInterface"/>
+	<classpathentry kind="src" path="Interfaces/withoutInterface"/>
+	<classpathentry kind="src" path="Manipulacao_de_Arquivos/File_Scanner"/>
+	<classpathentry kind="src" path="Manipulacao_de_Arquivos/FileReader_BufferReader"/>
+	<classpathentry kind="src" path="Manipulacao_de_Arquivos/FileWriter_BufferdWriter"/>
+	<classpathentry kind="src" path="Manipulacao_de_Arquivos/Manipulacao_de_pastas"/>
+	<classpathentry kind="src" path="Manipulacao_de_Arquivos/Path_information"/>
+	<classpathentry kind="src" path="Metodos_abstratos/src"/>
+	<classpathentry kind="src" path="mvc_example/src"/>
+	<classpathentry kind="src" path="Polimorfismo/src"/>
+	<classpathentry kind="src" path="Set/src"/>
+	<classpathentry kind="src" path="Try_catch/src"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
