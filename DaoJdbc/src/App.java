@@ -1,29 +1,18 @@
-import java.sql.Statement;
-import java.text.SimpleDateFormat;
+import java.util.Date;
 
-import db.DB;
-
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import model.entities.Department;
+import model.entities.Seller;
 
 public class App {
-    public static void main(String[] args) throws Exception {
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-        Connection conn = null;
-        PreparedStatement st = null;
+    public static void main(String[] args) {
 
-        try {
-            conn = DB.getConnection();
+        Department obj = new Department(1, "books");
+        System.out.println(obj);
+        
+        Seller seller = new Seller(21, "Bob", "bob@gmail.com", new Date(), 2000.0, obj);
+        System.out.println(seller);
 
-            int rowsAffected = st.executeUpdate();
 
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } finally {
-            DB.closeStatement(st);
-            DB.closeConnection();
-        }
-
+        
     }
 }
