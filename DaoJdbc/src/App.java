@@ -1,19 +1,17 @@
-import java.util.Date;
+import java.sql.SQLException;
 import model.dao.DaoFactory;
 import model.dao.SellerDao;
-import model.entities.Department;
 import model.entities.Seller;
 
 
-public class App {
-    public static void main(String[] args) {
 
-        Department obj = new Department(1, "books");
-        System.out.println(obj);
+public class App {
+    public static void main(String[] args) throws ClassNotFoundException, SQLException {
+
 
         SellerDao sellerDao = DaoFactory.createSellerDao();
         
-        Seller seller = new Seller(21, "Bob", "bob@gmail.com", new Date(), 2000.0, obj);
+        Seller seller = sellerDao.findById(3);
         System.out.println(seller);
         
     }
