@@ -89,7 +89,7 @@ public class SellerDaoJDBC implements SellerDao {
     @Override
     public List<Seller> findAll() {
         PreparedStatement st = null;
-        ResultSet st = null;
+        ResultSet rs = null;
 
         try {
             st = conn.prepareStatement(
@@ -101,6 +101,8 @@ public class SellerDaoJDBC implements SellerDao {
             Map<Integer, Department> map = new HashMap<>();
 
             while (rs.next()) {
+
+                Department dep = map.get(rs.getInt("DepartmentId"));
                 if (dep == null) {
                     dep = instantiateDepartment(rs);
                     map.put(rs.getInt("DepartmentId"), dep);
