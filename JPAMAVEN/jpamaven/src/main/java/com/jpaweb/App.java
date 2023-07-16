@@ -2,10 +2,9 @@ package com.jpaweb;
 
 
 import com.jpaweb.domain.Person;
-
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.Persistence;
 
 
 public class App {
@@ -14,7 +13,8 @@ public class App {
         Person p2 = new Person(null, "Joaquim Phoenix", "joaquim@gmail.com");
         Person p3 = new Person(null, "Javier Barden", "javier@gmail.com");
 
-        EntityManagerFactory emf =  Persistence.createEntityManagerFactory("exemplo-jpa");
+        EntityManagerFactory emf ;
+        emf = Persistence.createEntityManagerFactory("jpa");
         EntityManager em = (EntityManager) emf.createEntityManager();
 
         em.getTransaction().begin();
