@@ -17,9 +17,5 @@ public class App {
 
         Person p = em.find(Person.class, 2);
         System.out.println(p);
-
-        System.out.println("Finish");
-        em.close();
-        emf.close();
     }
 }
