@@ -13,7 +13,7 @@ import com.stellarviewer.proj.entities.Category;
 import com.stellarviewer.proj.services.CategoryService;
 
 @RestController
-@RequestMapping(value = "/category")
+@RequestMapping(value = "/categories")
 public class CategoryResource {
     
     @Autowired
