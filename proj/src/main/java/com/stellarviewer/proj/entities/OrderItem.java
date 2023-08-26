@@ -3,6 +3,7 @@ package com.stellarviewer.proj.entities;
 import java.io.Serializable;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.stellarviewer.proj.entities.pk.OrderItemPK;
 
 import jakarta.persistence.EmbeddedId;
@@ -12,6 +13,7 @@ import jakarta.persistence.Entity;
 public class OrderItem implements Serializable {
 
   @EmbeddedId
+  @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
   private OrderItemPK id = new OrderItemPK();
 
   private Integer quantity;
@@ -39,6 +41,8 @@ public class OrderItem implements Serializable {
     id.setOrder(order);
   }
 
+
+  @JsonIgnore 
   public Product getProduct() {
     return id.getProduct();
   }
@@ -63,6 +67,16 @@ public class OrderItem implements Serializable {
     this.price = price;
   }
 
+
+  public OrderItemPK getId() {
+    return id;
+  }
+
+  public void setId(OrderItemPK id) {
+    this.id = id;
+  }
+
+
   @Override
   public int hashCode() {
     final int prime = 31;
@@ -86,14 +100,6 @@ public class OrderItem implements Serializable {
     } else if (!id.equals(other.id))
       return false;
     return true;
-  }
-
-  public OrderItemPK getId() {
-    return id;
-  }
-
-  public void setId(OrderItemPK id) {
-    this.id = id;
   }
 
 }

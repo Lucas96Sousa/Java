@@ -9,6 +9,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.stellarviewer.proj.entities.enums.OrderStatus;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -32,7 +33,7 @@ public class Order implements Serializable {
   @JoinColumn(name = "client_id")
   private User client;
 
-  @OneToMany(mappedBy = "id.order")
+  @OneToMany(mappedBy = "id.order", fetch = FetchType.EAGER)
   private Set<OrderItem> items = new HashSet<>();
 
   public Order() {
