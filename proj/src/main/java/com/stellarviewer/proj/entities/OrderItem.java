@@ -2,6 +2,7 @@ package com.stellarviewer.proj.entities;
 
 import java.io.Serializable;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.stellarviewer.proj.entities.pk.OrderItemPK;
 
 import jakarta.persistence.EmbeddedId;
@@ -28,7 +29,8 @@ public class OrderItem implements Serializable {
     this.quantity = quantity;
     this.price = price;
   }
-
+  
+  @JsonIgnore
   public Order getOrder() {
     return id.getOrder();
   }
